@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACE</title>
+    <link href='https://fonts.googleapis.com/css?family=Geist' rel='stylesheet'>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        .wiadomosc-sukcesu {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #333;
+            color: #fff;
+            padding: 15px 25px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            animation: pojawienieZnikniecie 2s forwards;
+        }
+
+        @keyframes pojawienieZnikniecie {
+            0% { opacity: 0; transform: translateY(-20px); }
+            10% { opacity: 1; transform: translateY(0); }
+            90% { opacity: 1; transform: translateY(0); }
+            100% { opacity: 0; transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="naglowek">
+        <a href="index.html"><img src="logo.png" alt="Logo" class="logo"></a>
+        <nav class="nawigacja">
+            <a href="index.html">Strona główna</a>
+            <a href="shop.html">Sklep</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="basket.html" class="koszyk-link">
+                <img src="bas.jpg" alt="Koszyk" class="koszyk">
+                <span id="licznik-koszyka">0</span>
+            </a>
+        </nav>
+    </div>
+    <div class="statystyki">
+        <h1>Statystyki</h1>
+        <div class="tresc-statystyk">
+            <div class="okno-2">
+                <h3>200+</h3>
+                <p>klientów</p>
+            </div>
+            <div class="okno-2">
+                <h3>20+</h3>
+                <p>produktów</p>
+            </div>
+            <div class="okno-2">
+                <h3>4.7/5</h3>
+                <p>ocen</p>
+            </div>
+        </div>
+    </div>
+    <div class="linia"></div>
+    <div class="rekomendacje">
+        <h2>Wszystko czego potrzebujesz</h2>
+        <div class="tresc-rekomendacji">
+            <div class="okno">
+                <h3>Produkty</h3>
+                <p>Produkty robione z dbałością o szczegóły i pasję do mody. Wysokiej jakości materiały zapewniają komfort i wyjątkowy wygląd.</p>
+            </div>
+            <div class="okno">
+                <h3>Szybka Dostawa</h3>
+                <p>Dbamy o czas naszych klientów. Nasze produkty są wysyłane natychmiast, abyś jak najszybciej mógł się nimi cieszyć!</p>
+            </div>
+            <div class="okno">
+                <h3>Gwarancja Satysfakcji</h3>
+                <p>Zapewniamy, że będziesz zadowolony z naszych produktów. Jeśli nie spełnią Twoich oczekiwań, masz możliwość zwrotu.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="linia"></div>
+    <h2>Rekomendacje</h2>
+    <div class="kontener">
+        <div class="produkt">
+            <div class="kontener-obrazu">
+                <img src="pr1.webp" alt="Produkt 1" class="obraz-produktu domyslny-obraz">
+                <img src="pr11.webp" alt="Produkt 1 Hover" class="obraz-produktu obraz-najechany">
+            </div>
+            <div class="info-produktu">
+                <h3>Black ACE baggy jeans - cat</h3>
+                <p>429,00 zł</p>
+                <button class="przycisk" onclick="window.location.href='shop.html'">Dodaj do koszyka</button>
+            </div>
+        </div>
+        <div class="produkt">
+            <div class="kontener-obrazu">
+                <img src="pr2.webp" alt="Produkt 2" class="obraz-produktu domyslny-obraz">
+                <img src="prr2.webp" alt="Produkt 2 Hover" class="obraz-produktu obraz-najechany">
+            </div>
+            <div class="info-produktu">
+                <h3>Black ACE baggy jeans - tribal</h3>
+                <p>428,00 zł</p>
+                <button class="przycisk" onclick="window.location.href='shop.html'">Dodaj do koszyka</button>
+            </div>
+        </div>
+        <div class="produkt">
+            <div class="kontener-obrazu">
+                <img src="pr3.webp" alt="Produkt 3" class="obraz-produktu domyslny-obraz">
+                <img src="prr3.webp" alt="Produkt 3 Hover" class="obraz-produktu obraz-najechany">
+            </div>
+            <div class="info-produktu">
+                <h3>Black ACE baggy jeans - AC x GLOE</h3>
+                <p>353,00 zł</p>
+                <button class="przycisk" onclick="window.location.href='shop.html'">Dodaj do koszyka</button>
+            </div>
+        </div>
+    </div>
+    <div class="linia1"></div>
+    <footer class="stopka">
+        <div class="zawartosc-stopki">
+            <div class="sekcja-stopki">
+                <h3>ACE</h3>
+                <p>Marka odzieżowa tworząca unikalne i stylowe produkty dla osób ceniących sobie jakość i design.</p>
+            </div>
+            <div class="sekcja-stopki">
+                <h3>Kontakt</h3>
+                <a href="mailto:kontakt@ace.pl">kontakt@ace.pl</a>
+                <a href="tel:+48123456789">+48 123 456 789</a>
+                <p>ul. Przykładowa 123, 00-000 Warszawa</p>
+            </div>
+            <div class="sekcja-stopki">
+                <h3>Nawigacja</h3>
+                <a href="index.html">Strona główna</a>
+                <a href="shop.html">Sklep</a>
+                <a href="about.html">O nas</a>
+                <a href="contact.html">Kontakt</a>
+            </div>
+        </div>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+</html>
