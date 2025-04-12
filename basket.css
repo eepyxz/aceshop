@@ -1,0 +1,592 @@
+<<<<<<< HEAD
+body {
+    font-family: 'Geist', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.kontener-koszyka {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.naglowek-koszyka {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+.naglowek-koszyka h1 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+}
+
+.elementy-koszyka {
+    background: #000;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.element-koszyka {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: none;
+    position: relative;
+    transition: all 0.3s ease;
+    justify-content: center;
+    background-color: #000;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.element-koszyka:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.element-koszyka:last-child {
+    border-bottom: none;
+}
+
+.obraz-elementu-koszyka {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.szczegoly-elementu-koszyka {
+    flex-grow: 1;
+}
+
+.szczegoly-elementu-koszyka h3 {
+    margin: 0 0 10px 0;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.szczegoly-elementu-koszyka p {
+    margin: 0;
+    color: #ccc;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.kontrolki-ilosci {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.kontrolki-ilosci button {
+    background: #000;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.kontrolki-ilosci button:hover {
+    background: #444;
+    transform: translateY(-2px);
+}
+
+.kontrolki-ilosci span {
+    min-width: 30px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.przycisk-usun {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.przycisk-usun:hover {
+    color: #ff4444;
+    transform: scale(1.1);
+}
+
+.podsumowanie-koszyka {
+    background: #000;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.suma-koszyka {
+    font-size: 1.8em;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+.kontynuuj-zakupy {
+    display: inline-block;
+    padding: 16px 30px;
+    background: linear-gradient(45deg, #333, #444);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.kontynuuj-zakupy:hover {
+    background: linear-gradient(45deg, #444, #555);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.kontynuuj-zakupy:active {
+    transform: translateY(0);
+}
+
+.pusty-koszyk {
+    text-align: center;
+    color: #ccc;
+    font-size: 1.2em;
+    padding: 40px;
+    font-style: italic;
+}
+
+
+.kontener-formularza-zamowienia {
+    background: #000;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.kontener-formularza-zamowienia h2 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.wiersz-formularza {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.grupa-formularza {
+    flex: 1;
+    min-width: 250px;
+}
+
+.grupa-formularza label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ccc;
+    font-weight: bold;
+}
+
+.grupa-formularza input, 
+.grupa-formularza textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Geist', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.grupa-formularza input:focus, 
+.grupa-formularza textarea:focus {
+    border-color: #666;
+    outline: none;
+    box-shadow: 0 0 10px rgba(102, 102, 102, 0.3);
+    background-color: black;
+}
+
+.grupa-formularza input::placeholder, 
+.grupa-formularza textarea::placeholder {
+    color: #666;
+}
+
+.grupa-formularza textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.przycisk-wyslij {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(45deg, #333, #444);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    display: block;
+    max-width: 400px;
+    margin: 20px auto 0;
+}
+
+.przycisk-wyslij:hover {
+    background: linear-gradient(45deg, #444, #555);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.przycisk-wyslij:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .element-koszyka {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .obraz-elementu-koszyka {
+        margin: 0 0 20px 0;
+    }
+
+    .przycisk-usun {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .kontrolki-ilosci {
+        justify-content: center;
+    }
+
+    .przycisk-wyslij {
+        width: 100%;
+    }
+=======
+body {
+    font-family: 'Geist', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.kontener-koszyka {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.naglowek-koszyka {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+.naglowek-koszyka h1 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+}
+
+.elementy-koszyka {
+    background: #000;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.element-koszyka {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: none;
+    position: relative;
+    transition: all 0.3s ease;
+    justify-content: center;
+    background-color: #000;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.element-koszyka:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.element-koszyka:last-child {
+    border-bottom: none;
+}
+
+.obraz-elementu-koszyka {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.szczegoly-elementu-koszyka {
+    flex-grow: 1;
+}
+
+.szczegoly-elementu-koszyka h3 {
+    margin: 0 0 10px 0;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.szczegoly-elementu-koszyka p {
+    margin: 0;
+    color: #ccc;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.kontrolki-ilosci {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.kontrolki-ilosci button {
+    background: #000;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.kontrolki-ilosci button:hover {
+    background: #444;
+    transform: translateY(-2px);
+}
+
+.kontrolki-ilosci span {
+    min-width: 30px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.przycisk-usun {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.przycisk-usun:hover {
+    color: #ff4444;
+    transform: scale(1.1);
+}
+
+.podsumowanie-koszyka {
+    background: #000;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.suma-koszyka {
+    font-size: 1.8em;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+.kontynuuj-zakupy {
+    display: inline-block;
+    padding: 16px 30px;
+    background: linear-gradient(45deg, #333, #444);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.kontynuuj-zakupy:hover {
+    background: linear-gradient(45deg, #444, #555);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.kontynuuj-zakupy:active {
+    transform: translateY(0);
+}
+
+.pusty-koszyk {
+    text-align: center;
+    color: #ccc;
+    font-size: 1.2em;
+    padding: 40px;
+    font-style: italic;
+}
+
+
+.kontener-formularza-zamowienia {
+    background: #000;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.kontener-formularza-zamowienia h2 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.wiersz-formularza {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.grupa-formularza {
+    flex: 1;
+    min-width: 250px;
+}
+
+.grupa-formularza label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ccc;
+    font-weight: bold;
+}
+
+.grupa-formularza input, 
+.grupa-formularza textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Geist', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.grupa-formularza input:focus, 
+.grupa-formularza textarea:focus {
+    border-color: #666;
+    outline: none;
+    box-shadow: 0 0 10px rgba(102, 102, 102, 0.3);
+    background-color: black;
+}
+
+.grupa-formularza input::placeholder, 
+.grupa-formularza textarea::placeholder {
+    color: #666;
+}
+
+.grupa-formularza textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.przycisk-wyslij {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(45deg, #333, #444);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    display: block;
+    max-width: 400px;
+    margin: 20px auto 0;
+}
+
+.przycisk-wyslij:hover {
+    background: linear-gradient(45deg, #444, #555);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.przycisk-wyslij:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .element-koszyka {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .obraz-elementu-koszyka {
+        margin: 0 0 20px 0;
+    }
+
+    .przycisk-usun {
+        position: static;
+        margin-top: 10px;
+    }
+
+    .kontrolki-ilosci {
+        justify-content: center;
+    }
+
+    .przycisk-wyslij {
+        width: 100%;
+    }
+>>>>>>> 904764b (Initial commit)
+}

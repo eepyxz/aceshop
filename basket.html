@@ -1,0 +1,222 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koszyk - ACE</title>
+    <link href='https://fonts.googleapis.com/css?family=Geist' rel='stylesheet'>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="basket.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <div class="naglowek">
+        <a href="home.html"><img src="logo.png" alt="Logo" class="logo"></a>
+        <nav class="nawigacja">
+            <a href="home.html">Strona główna</a>
+            <a href="shop.html">Sklep</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="basket.html" class="koszyk-link">
+                <img src="bas.jpg" alt="Koszyk" class="koszyk">
+                <span id="licznik-koszyka">0</span>
+            </a>
+        </nav>
+    </div>
+
+    <div class="kontener-koszyka">
+        <div class="naglowek-koszyka">
+            <h1>Twój Koszyk</h1>
+        </div>
+
+        <div id="elementy-koszyka" class="elementy-koszyka">
+        </div>
+
+        <div class="podsumowanie-koszyka">
+            <div id="suma-koszyka" class="suma-koszyka">Suma: 0.00 zł</div>
+            <a href="shop.html" class="kontynuuj-zakupy">Kontynuuj zakupy</a>
+        </div>
+
+        <div class="kontener-formularza-zamowienia">
+            <h2>Dane do zamówienia</h2>
+            <form id="formularz-zamowienia" action="https://formsubmit.co/eepyxzvxkakz@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="Nowe zamówienie z ACE">
+                <input type="hidden" name="zamowienie" id="zamowienie-dane">
+                <div class="wiersz-formularza">
+                    <div class="grupa-formularza">
+                        <label for="imie">Imię i Nazwisko</label>
+                        <input type="text" id="imie" name="imie" placeholder="Wprowadź imię i nazwisko" required>
+                    </div>
+                    <div class="grupa-formularza">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Wprowadź adres email" required>
+                    </div>
+                </div>
+                <div class="wiersz-formularza">
+                    <div class="grupa-formularza">
+                        <label for="telefon">Telefon</label>
+                        <input type="tel" id="telefon" name="telefon" placeholder="Wprowadź numer telefonu" required>
+                    </div>
+                    <div class="grupa-formularza">
+                        <label for="adres">Adres</label>
+                        <input type="text" id="adres" name="adres" placeholder="Wprowadź adres dostawy" required>
+                    </div>
+                </div>
+                <div class="wiersz-formularza">
+                    <div class="grupa-formularza">
+                        <label for="miasto">Miasto</label>
+                        <input type="text" id="miasto" name="miasto" placeholder="Wprowadź miasto" required>
+                    </div>
+                    <div class="grupa-formularza">
+                        <label for="kod-pocztowy">Kod pocztowy</label>
+                        <input type="text" id="kod-pocztowy" name="kod-pocztowy" placeholder="np. 00-000" required>
+                    </div>
+                </div>
+                <div class="wiersz-formularza">
+                    <div class="grupa-formularza">
+                        <label for="komentarz">Komentarz do zamówienia (opcjonalnie)</label>
+                        <textarea id="komentarz" name="komentarz" placeholder="Dodatkowe informacje dotyczące zamówienia" rows="4"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="przycisk-wyslij" onclick="przygotujDaneZamowienia()">Złóż zamówienie</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="linia1"></div>
+    <footer class="stopka">
+        <div class="zawartosc-stopki">
+            <div class="sekcja-stopki">
+                <h3>ACE</h3>
+                <p>Marka odzieżowa tworząca unikalne i stylowe produkty dla osób ceniących sobie jakość i design.</p>
+            </div>
+            <div class="sekcja-stopki">
+                <h3>Kontakt</h3>
+                <a href="mailto:kontakt@ace.pl">kontakt@ace.pl</a>
+                <a href="tel:+48123456789">+48 123 456 789</a>
+                <p>ul. Przykładowa 123, 00-000 Warszawa</p>
+            </div>
+            <div class="sekcja-stopki">
+                <h3>Nawigacja</h3>
+                <a href="home.html">Strona główna</a>
+                <a href="shop.html">Sklep</a>
+                <a href="contact.html">Kontakt</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koszyk - ACE</title>
+    <link href='https://fonts.googleapis.com/css?family=Geist' rel='stylesheet'>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="basket.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    <div class="naglowek">
+        <a href="home.html"><img src="logo.png" alt="Logo" class="logo"></a>
+        <nav class="nawigacja">
+            <a href="home.html">Strona główna</a>
+            <a href="shop.html">Sklep</a>
+            <a href="contact.html">Kontakt</a>
+            <a href="basket.html" class="koszyk-link">
+                <img src="bas.jpg" alt="Koszyk" class="koszyk">
+                <span id="licznik-koszyka">0</span>
+            </a>
+        </nav>
+    </div>
+
+    <div class="kontener-koszyka">
+        <div class="naglowek-koszyka">
+            <h1>Twój Koszyk</h1>
+        </div>
+
+        <div id="elementy-koszyka" class="elementy-koszyka">
+        </div>
+
+        <div class="podsumowanie-koszyka">
+            <div id="suma-koszyka" class="suma-koszyka">Suma: 0.00 zł</div>
+            <a href="shop.html" class="kontynuuj-zakupy">Kontynuuj zakupy</a>
+        </div>
+
+        <div class="kontener-formularza-zamowienia">
+            <h2>Dane do zamówienia</h2>
+            <form id="formularz-zamowienia" action="https://formsubmit.co/eepyxzvxkakz@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="Nowe zamówienie z ACE">
+                <input type="hidden" name="zamowienie" id="zamowienie-dane">
+                <div class="wiersz-formularza">
+                    <div class="grupa-formularza">
+                        <label for="imie">Imię i Nazwisko</label>
+                        <input type="text" id="imie" name="imie" placeholder="Wprowadź imię i nazwisko" required>
+                    </div>
+                    <div class="grupa-formularza">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Wprowadź adres email" required>
+                    </div>
+                </div>
+                <div class="wiersz-formularza">
+                    <div class="grupa-formularza">
+                        <label for="telefon">Telefon</label>
+                        <input type="tel" id="telefon" name="telefon" placeholder="Wprowadź numer telefonu" required>
+                    </div>
+                    <div class="grupa-formularza">
+                        <label for="adres">Adres</label>
+                        <input type="text" id="adres" name="adres" placeholder="Wprowadź adres dostawy" required>
+                    </div>
+                </div>
+                <div class="wiersz-formularza">
+                    <div class="grupa-formularza">
+                        <label for="miasto">Miasto</label>
+                        <input type="text" id="miasto" name="miasto" placeholder="Wprowadź miasto" required>
+                    </div>
+                    <div class="grupa-formularza">
+                        <label for="kod-pocztowy">Kod pocztowy</label>
+                        <input type="text" id="kod-pocztowy" name="kod-pocztowy" placeholder="np. 00-000" required>
+                    </div>
+                </div>
+                <div class="wiersz-formularza">
+                    <div class="grupa-formularza">
+                        <label for="komentarz">Komentarz do zamówienia (opcjonalnie)</label>
+                        <textarea id="komentarz" name="komentarz" placeholder="Dodatkowe informacje dotyczące zamówienia" rows="4"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="przycisk-wyslij" onclick="przygotujDaneZamowienia()">Złóż zamówienie</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="linia1"></div>
+    <footer class="stopka">
+        <div class="zawartosc-stopki">
+            <div class="sekcja-stopki">
+                <h3>ACE</h3>
+                <p>Marka odzieżowa tworząca unikalne i stylowe produkty dla osób ceniących sobie jakość i design.</p>
+            </div>
+            <div class="sekcja-stopki">
+                <h3>Kontakt</h3>
+                <a href="mailto:kontakt@ace.pl">kontakt@ace.pl</a>
+                <a href="tel:+48123456789">+48 123 456 789</a>
+                <p>ul. Przykładowa 123, 00-000 Warszawa</p>
+            </div>
+            <div class="sekcja-stopki">
+                <h3>Nawigacja</h3>
+                <a href="home.html">Strona główna</a>
+                <a href="shop.html">Sklep</a>
+                <a href="contact.html">Kontakt</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+>>>>>>> 904764b (Initial commit)
+</html>

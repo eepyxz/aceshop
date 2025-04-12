@@ -1,0 +1,214 @@
+<<<<<<< HEAD
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    color: #e6e6e6;
+    font-family: 'Geist', sans-serif;
+}
+
+
+.kont-box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #000;
+    border: 1px solid #333;
+    border-radius: 15px;
+    margin-top: 200px;
+    margin-bottom: 80px;
+}
+
+.tytul {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pole {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.pole label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pole input,
+.pole textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #000;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Geist', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.pole input:focus,
+.pole textarea:focus {
+    border-color: #666;
+    outline: none;
+    background-color: 000;
+}
+
+.pole textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.przycisk {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(45deg, #333, #444);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.przycisk:hover {
+    background: linear-gradient(45deg, #444, #555);
+    transform: translateY(-2px);
+}
+
+.przycisk:active {
+    transform: translateY(0);
+}
+
+.stopka {
+    background-color: 000;
+    color: #e6e6e6;
+    text-align: center;
+    width: 100%;
+}
+
+.linia1 {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: block;
+=======
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    color: #e6e6e6;
+    font-family: 'Geist', sans-serif;
+}
+
+
+.kont-box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #000;
+    border: 1px solid #333;
+    border-radius: 15px;
+    margin-top: 200px;
+    margin-bottom: 80px;
+}
+
+.tytul {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pole {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.pole label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pole input,
+.pole textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #000;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Geist', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.pole input:focus,
+.pole textarea:focus {
+    border-color: #666;
+    outline: none;
+    background-color: 000;
+}
+
+.pole textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.przycisk {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(45deg, #333, #444);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.przycisk:hover {
+    background: linear-gradient(45deg, #444, #555);
+    transform: translateY(-2px);
+}
+
+.przycisk:active {
+    transform: translateY(0);
+}
+
+.stopka {
+    background-color: 000;
+    color: #e6e6e6;
+    text-align: center;
+    width: 100%;
+}
+
+.linia1 {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: block;
+>>>>>>> 904764b (Initial commit)
+}
