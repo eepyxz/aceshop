@@ -61,7 +61,7 @@ html, body {
 .pole textarea:focus {
     border-color: #666;
     outline: none;
-    background-color: 000;
+    background-color: #000;
 }
 
 .pole textarea {
@@ -93,7 +93,7 @@ html, body {
 }
 
 .stopka {
-    background-color: 000;
+    background-color: #000;
     color: #e6e6e6;
     text-align: center;
     width: 100%;
