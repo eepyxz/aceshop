@@ -66,18 +66,6 @@ function dodajDoKoszyka(e) {
     localStorage.setItem('koszyk', JSON.stringify(koszyk));
     aktualizujLicznik();
 
-    // pokazujemy wiadomosc
-    let wiadomosc = document.createElement('div');
-    wiadomosc.className = 'wiadomosc-sukcesu';
-    wiadomosc.textContent = 'produkt dodany do koszyka!';
-    document.body.appendChild(wiadomosc);
-
-    // usuwamy wiadomosc po 2 sekundach
-    setTimeout(function() {
-        if (wiadomosc.parentNode) {
-            wiadomosc.parentNode.removeChild(wiadomosc);
-        }
-    }, 2000);
 }
 
 // usuwamy produkt z koszyka
