@@ -219,7 +219,6 @@ function przygotujDaneZamowienia() {
     setTimeout(function() {
         localStorage.setItem('koszyk', JSON.stringify([]));
         aktualizujLicznik();
-        alert('Dziękujemy za zamówienie! Wkrótce się z Tobą skontaktujemy.');
     }, 1000);
 }
 
